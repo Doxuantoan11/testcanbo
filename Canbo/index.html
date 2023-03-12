@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Them xoa suaw</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="form">
+    <h1 class="form-header">Quản lý cán bộ</h1>
+     <div id ="form" >
+        <div class="form-item ">
+            <label for="id">Mã cán bộ</label>
+            <input type="text" id ="id" required/>
+        </div>
+        <div class="form-item">
+            <label for="hoten">Họ tên</label>
+            <input type="text" id ="hoten">
+        </div>
+        <div class="form-item">
+            <label for="tuoi">Tuổi</label>
+            <input type="text" id ="tuoi">
+        </div>
+        <div class="form-item">
+            <label for="diachi">Địa chỉ</label>
+            <input type="text" id ="diachi">
+        </div>
+        <button onclick ="them()">Thêm mới</button>
+     </div>
+</div>
+<h2>Thông tin Cán bộ:
+    <table  id ="render">
+        <tr>
+          <th>Mã cán bộ</th>
+          <th>Họ tên</th>
+          <th>Tuổi</th>
+          <th>Địa chỉ</th>
+          <th class = "tuychon">Tuỳ chọn</th>
+        </tr>
+      </table>
+</h2>
+</body>
+<script src="./index.js"></script>
+</html>
